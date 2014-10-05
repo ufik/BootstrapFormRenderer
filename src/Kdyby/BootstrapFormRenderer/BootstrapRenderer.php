@@ -197,6 +197,7 @@ class BootstrapRenderer extends Nette\Object implements Nette\Forms\IFormRendere
 
 			} elseif (!$control instanceof Controls\RadioList && !self::isCheckboxList($control)) {
 				$label->addClass('control-label');
+				$el->addClass('form-control');
 			}
 
 			$control->setOption('pairContainer', $pair = Html::el('div'));
