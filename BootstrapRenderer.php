@@ -181,6 +181,7 @@ class BootstrapRenderer extends Nette\Object implements Nette\Forms\IFormRendere
 
 			} else {
 				$label->addClass('control-label');
+				$el->addClass('form-control');
 			}
 
 			$control->setOption('pairContainer', $pair = Html::el('div'));
