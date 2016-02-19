@@ -504,7 +504,7 @@ class BootstrapRenderer extends Nette\Object implements Nette\Forms\IFormRendere
 	{
 		$items = array();
 		foreach ($control->items as $key => $value) {
-			$el = $control->getControlPart($key);
+			$el = $control->getControl($key);
 			if ($el->getName() === 'input') {
 				$items[$key] = $radio = (object) array(
 					'input' => $el,
